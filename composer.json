@@ -1,0 +1,88 @@
+{
+    "name": "sol/api-platform-mongo-bridge",
+    "type": "library",
+    "description": "Make apiplatform mongo compatible with the same functionalities.",
+    "keywords": ["REST", "API", "API-PLATFORM", "MONGODB"],
+    "homepage": "https://api-platform.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandre Clotail",
+            "email": "alexandre.clotail@gmail.com"
+        },
+	{
+            "name": "Cédric Hollard",
+            "email": "ced.holllard@gmail.com"
+    	}
+    ],
+    "require": {
+        "php": ">=7.0",
+        "doctrine/inflector": "^1.0",
+        "api-platform/api-pack": "^1.1",
+        "doctrine/mongodb-odm-bundle",
+    },
+    "require-dev": {
+        "behat/behat": "^3.1",
+        "behat/mink": "^1.7",
+        "behat/mink-browserkit-driver": "^1.3.1",
+        "behat/mink-extension": "^2.2",
+        "behat/symfony2-extension": "^2.1.1",
+        "behatch/contexts": "^3.0@dev",
+        "doctrine/annotations": "^1.2",
+        "doctrine/doctrine-bundle": "^1.6.3",
+        "doctrine/orm": "^2.5.2",
+        "friendsofsymfony/user-bundle": "^2.0",
+        "guzzlehttp/guzzle": "^6.0",
+        "justinrainbow/json-schema": "^5.0",
+        "nelmio/api-doc-bundle": "^2.13.3",
+        "php-mock/php-mock-phpunit": "^2.0",
+        "phpdocumentor/reflection-docblock": "^3.0 || ^4.0",
+        "phpdocumentor/type-resolver": "^0.2.1 || ^0.3 || 0.4",
+        "phpunit/phpunit": "^6.1",
+        "psr/log": "^1.0",
+        "sensio/framework-extra-bundle": "^3.0.11 || ^4.0",
+        "symfony/asset": "^3.3 || ^4.0",
+        "symfony/cache": "^3.3 || ^4.0",
+        "symfony/config": "^3.3 || ^4.0",
+        "symfony/console": "^3.3 || ^4.0",
+        "symfony/debug": "^2.8 || ^3.0 || ^4.0",
+        "symfony/dependency-injection": "^3.3 || ^4.0",
+        "symfony/doctrine-bridge": "^2.8.12 || ^3.0 || ^4.0",
+        "symfony/event-dispatcher": "^3.3 || ^4.0",
+        "symfony/expression-language": "^2.8 || ^3.0 || ^4.0",
+        "symfony/finder": "^3.3 || ^4.0",
+        "symfony/form": "^3.3 || ^4.0",
+        "symfony/framework-bundle": "^3.3 || ^4.0",
+        "symfony/phpunit-bridge": "^3.3 || ^4.0",
+        "symfony/routing": "^3.3 || ^4.0",
+        "symfony/security": "^3.0 || ^4.0",
+        "symfony/security-bundle": "^3.0 || ^4.0",
+        "symfony/twig-bundle": "^3.1 || ^4.0",
+        "symfony/validator": "^3.3 || ^4.0",
+        "symfony/yaml": "^3.3 || ^4.0",
+    },
+    "conflict": {
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-4": { "Sol\\ApiPlatform\\MongoDB\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Sol\\ApiPlatform\\MongoDB\\Tests\\": "tests/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "config": {
+	"preferred-install": {
+		"*": "dist"
+	},
+	"sort-packages": true,
+	"platform": {
+		"ext-mongo": "1.6.16"
+	}
+    }
+}
