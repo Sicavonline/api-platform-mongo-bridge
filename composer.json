@@ -19,7 +19,7 @@
         "php": ">=7.0",
         "doctrine/inflector": "^1.0",
         "api-platform/api-pack": "^1.1",
-        "doctrine/mongodb-odm-bundle",
+        "doctrine/mongodb-odm-bundle": "*"
     },
     "require-dev": {
         "behat/behat": "^3.1",
@@ -59,7 +59,7 @@
         "symfony/security-bundle": "^3.0 || ^4.0",
         "symfony/twig-bundle": "^3.1 || ^4.0",
         "symfony/validator": "^3.3 || ^4.0",
-        "symfony/yaml": "^3.3 || ^4.0",
+        "symfony/yaml": "^3.3 || ^4.0"
     },
     "conflict": {
     },
