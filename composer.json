@@ -1,6 +1,6 @@
 {
-    "name": "sol/api-platform-mongo-bridge",
-    "type": "library",
+    "name": "clotail/api-platform-mongo-bridge",
+    "type": "symfony-bundle",
     "description": "Make apiplatform mongo compatible with the same functionalities.",
     "keywords": ["REST", "API", "API-PLATFORM", "MONGODB"],
     "homepage": "https://api-platform.com",
