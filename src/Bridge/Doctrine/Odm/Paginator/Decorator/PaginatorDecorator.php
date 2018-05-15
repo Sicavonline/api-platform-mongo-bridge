@@ -1,6 +1,6 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Paginator\Decorator;
+namespace Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Paginator\Decorator;
 
 /**
  * Class PaginatorDecorator

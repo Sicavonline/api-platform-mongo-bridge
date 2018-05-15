@@ -1,6 +1,6 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension;
+namespace Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Extension;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
 use Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Paginator\Decorator\PaginatorDecorator;
@@ -34,7 +34,7 @@ class PaginationExtension implements ContextAwareQueryResultCollectionExtensionI
      * @var ResourceMetadataFactoryInterface le factory de metadata d'api plateform
      */
     private $resourceMetadataFactory;
-    /** @var bool configuration api-plateform, la pagination peut etre desactivé via les configurations */
+    /** @var bool configuration api-plateform, la pagination peut etre desactivï¿½ via les configurations */
     private $enabled;
     /** @var bool configuration api-plateform par default false, permet au client d'activer ou de desactiver la pagination */
     private $clientEnabled;
@@ -50,15 +50,15 @@ class PaginationExtension implements ContextAwareQueryResultCollectionExtensionI
     private $itemsPerPageParameterName;
     /** @var int configuration api-plateform, le nombre maximum d'item par page */
     private $maximumItemPerPage;
-    /** @var bool configuration api-plateform, est ce que la pagination est partiel ? si oui pas de count de requête */
+    /** @var bool configuration api-plateform, est ce que la pagination est partiel ? si oui pas de count de requï¿½te */
     private $partial;
-    /** @var bool configuration api-plateform, est ce que la pagination est partiel pour le client ? si oui pas de count de requête */
+    /** @var bool configuration api-plateform, est ce que la pagination est partiel pour le client ? si oui pas de count de requï¿½te */
     private $clientPartial;
     /** @var string configuration api-plateform, le nom du parametre get/post contenant l'activation ou non du mode partial */
     private $partialParameterName;
 
     /**
-     * Construction du PaginatorExtension, ce paginator à des dépendances sur beaucoup de paramètre api platform.
+     * Construction du PaginatorExtension, ce paginator ï¿½ des dï¿½pendances sur beaucoup de paramï¿½tre api platform.
      *
      * @param ManagerRegistry                  $managerRegistry
      * @param RequestStack                     $requestStack
@@ -156,7 +156,7 @@ class PaginationExtension implements ContextAwareQueryResultCollectionExtensionI
     }
 
     /**
-     * Est ce que la pagination est activé dans les configuration.
+     * Est ce que la pagination est activï¿½ dans les configuration.
      *
      * @param Request          $request
      * @param ResourceMetadata $resourceMetadata

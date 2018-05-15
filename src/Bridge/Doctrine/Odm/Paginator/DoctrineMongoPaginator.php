@@ -1,6 +1,6 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Paginator;
+namespace Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Paginator;
 
 use Doctrine\MongoDB\Query\Builder;
 
@@ -37,7 +37,7 @@ class DoctrineMongoPaginator implements \Countable, \IteratorAggregate
     }
 
     /**
-     * Retourne le count de la requête.
+     * Retourne le count de la requï¿½te.
      *
      * @return mixed
      */

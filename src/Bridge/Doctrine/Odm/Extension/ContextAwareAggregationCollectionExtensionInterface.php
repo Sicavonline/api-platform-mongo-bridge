@@ -3,13 +3,13 @@
 namespace Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Extension;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
-use Doctrine\ODM\MongoDB\Query\Builder;
+use Doctrine\ODM\MongoDB\Aggregation\Builder;
 
 /**
- * Interface ContextAwareQueryCollectionExtensionInterface for ODM context aware extension
- * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension
+ * Cette interface definit en plus la prise en compte d'un context pour une extension
+ * Interface ContextAwareQueryCollectionExtensionInterface.
  */
-interface ContextAwareQueryCollectionExtensionInterface extends QueryCollectionExtensionInterface
+interface ContextAwareAggregationCollectionExtensionInterface extends AggregationCollectionExtensionInterface
 {
     /**
      * @param Builder                     $queryBuilder

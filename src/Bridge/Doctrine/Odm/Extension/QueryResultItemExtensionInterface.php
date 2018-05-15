@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Bridge\Doctrine\Odm\Extension;
+namespace Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Extension;
 
 
 use Doctrine\ODM\MongoDB\Query\Builder;

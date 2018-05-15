@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Doctrine\Odm\Paginator\Decorator\Decorator;
+namespace Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Paginator\Decorator\Decorator;
 
 use ApiPlatform\Core\Exception\InvalidArgumentException;
-use Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Paginator\DoctrineMongoPaginator;
+use Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Paginator\DoctrineMongoPaginator;
 use Doctrine\MongoDB\Query\Query;
 
 /**
