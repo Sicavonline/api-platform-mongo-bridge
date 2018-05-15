@@ -1,12 +1,12 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension;
+namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension;
 
 use Doctrine\ODM\MongoDB\Query\Builder;
 
 /**
  * Interface QueryResultCollectionExtensionInterface
- * @package Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension
+ * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension
  */
 interface QueryResultCollectionExtensionInterface extends QueryCollectionExtensionInterface
 {

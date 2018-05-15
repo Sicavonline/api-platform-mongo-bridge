@@ -1,6 +1,6 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension\Filter;
+namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\Filter;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
 use ApiPlatform\Core\Exception\InvalidArgumentException;
@@ -9,7 +9,7 @@ use Doctrine\ODM\MongoDB\Query\Builder;
 
 /**
  * Class ExistsFilter
- * @package Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension\Filter
+ * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\Filter
  */
 class ExistsFilter extends AbstractContextAwareFilter
 {

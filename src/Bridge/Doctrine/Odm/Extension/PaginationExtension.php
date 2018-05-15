@@ -1,11 +1,11 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension;
+namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
-use Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Paginator\Decorator\PaginatorDecorator;
+use Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Paginator\Decorator\PaginatorDecorator;
 use App\Doctrine\Odm\Paginator\Decorator\Decorator\PaginatorPartialDecorator;
-use Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Paginator\DoctrineMongoPaginator;
+use Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Paginator\DoctrineMongoPaginator;
 use Doctrine\ODM\MongoDB\Query\Builder;
 use ApiPlatform\Core\Exception\InvalidArgumentException;
 use ApiPlatform\Core\Metadata\Resource\Factory\ResourceMetadataFactoryInterface;
@@ -16,7 +16,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
 
 /**
  * Class PaginationExtension
- * @package Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension
+ * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension
  */
 class PaginationExtension implements ContextAwareQueryResultCollectionExtensionInterface
 {

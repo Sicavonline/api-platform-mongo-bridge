@@ -1,6 +1,6 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoDB;
+namespace Sol\ApiPlatform\MongoBridge;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

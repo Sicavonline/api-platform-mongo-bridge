@@ -1,13 +1,13 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension;
+namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
 use Doctrine\ODM\MongoDB\Query\Builder;
 
 /**
  * Interface QueryCollectionExtensionInterface
- * @package Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension
+ * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension
  */
 interface QueryCollectionExtensionInterface
 {

@@ -6,16 +6,16 @@
  * Time: 09:37
  */
 
-namespace Sol\ApiPlatform\MongoDB\Bridge\Doctrine\Odm\DataProvider;
+namespace Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\DataProvider;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGenerator;
 use ApiPlatform\Core\DataProvider\ContextAwareCollectionDataProviderInterface;
 use ApiPlatform\Core\DataProvider\RestrictedDataProviderInterface;
 use ApiPlatform\Core\Exception\RuntimeException;
 use Doctrine\Bundle\MongoDBBundle\ManagerRegistry;
-use Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension\ContextAwareQueryCollectionExtensionInterface;
-use Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension\QueryCollectionExtensionInterface;
-use Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension\QueryResultCollectionExtensionInterface;
+use Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\ContextAwareQueryCollectionExtensionInterface;
+use Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\QueryCollectionExtensionInterface;
+use Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\QueryResultCollectionExtensionInterface;
 use Doctrine\Common\Persistence\ObjectRepository;
 use Doctrine\ODM\MongoDB\DocumentRepository;
 
@@ -23,7 +23,7 @@ use Doctrine\ODM\MongoDB\DocumentRepository;
  * Collection data provider for the Doctrine ODM.
  *
  * Class CollectionDataProvider
- * @package Sol\ApiPlatform\MongoDB\Bridge\Doctrine\Odm\DataProvider
+ * @package Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\DataProvider
  */
 class CollectionDataProvider implements ContextAwareCollectionDataProviderInterface, RestrictedDataProviderInterface
 {
@@ -52,7 +52,7 @@ class CollectionDataProvider implements ContextAwareCollectionDataProviderInterf
         return null !== $this->managerRegistry->getManagerForClass($resourceClass);
     }
 
-    /**
+    /**ou
      * {@inheritdoc}
      *
      * @throws RuntimeException

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension;
+namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
 use ApiPlatform\Core\Exception\InvalidArgumentException;
@@ -9,7 +9,7 @@ use Doctrine\ODM\MongoDB\Query\Builder;
 
 /**
  * Class OrderExtension
- * @package Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension
+ * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension
  */
 class OrderExtension implements ContextAwareQueryCollectionExtensionInterface
 {

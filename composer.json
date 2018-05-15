@@ -66,10 +66,10 @@
     "suggest": {
     },
     "autoload": {
-        "psr-4": { "Sol\\ApiPlatform\\MongoDB\\": "src/" }
+        "psr-4": { "Sol\\ApiPlatform\\MongoBridge\\": "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "Sol\\ApiPlatform\\MongoDB\\Tests\\": "tests/" }
+        "psr-4": { "Sol\\ApiPlatform\\MongoBridge\\Tests\\": "tests/" }
     },
     "extra": {
         "branch-alias": {

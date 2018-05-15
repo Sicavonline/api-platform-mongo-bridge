@@ -1,6 +1,6 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension\Filter;
+namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\Filter;
 
 
 use ApiPlatform\Core\Api\IriConverterInterface;
@@ -16,7 +16,7 @@ use Doctrine\Bundle\MongoDBBundle\Logger\LoggerInterface;
 
 /**
  * Class SearchFilter
- * @package Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension\Filter
+ * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\Filter
  */
 class SearchFilter extends AbstractContextAwareFilter
 {

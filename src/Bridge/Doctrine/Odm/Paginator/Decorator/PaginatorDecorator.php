@@ -1,10 +1,10 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Paginator\Decorator;
+namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Paginator\Decorator;
 
 /**
  * Class PaginatorDecorator
- * @package Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Paginator\Decorator
+ * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Paginator\Decorator
  */
 class PaginatorDecorator extends PaginatorPartialDecorator
 {

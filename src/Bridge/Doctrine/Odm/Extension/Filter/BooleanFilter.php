@@ -1,6 +1,6 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension\Filter;
+namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\Filter;
 
 use ApiPlatform\Core\Api\FilterInterface;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
@@ -10,7 +10,7 @@ use Doctrine\ODM\MongoDB\Types\Type;
 
 /**
  * Class BooleanFilter
- * @package Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension\Filter
+ * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\Filter
  */
 class BooleanFilter extends AbstractContextAwareFilter implements FilterInterface
 {

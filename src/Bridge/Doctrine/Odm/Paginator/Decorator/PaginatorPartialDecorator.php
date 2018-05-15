@@ -3,7 +3,7 @@
 namespace App\Doctrine\Odm\Paginator\Decorator\Decorator;
 
 use ApiPlatform\Core\Exception\InvalidArgumentException;
-use Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Paginator\DoctrineMongoPaginator;
+use Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Paginator\DoctrineMongoPaginator;
 use Doctrine\MongoDB\Query\Query;
 
 /**

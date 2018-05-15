@@ -6,7 +6,7 @@
  * Time: 09:37
  */
 
-namespace Sol\ApiPlatform\MongoDB\Bridge\Doctrine\Odm\DataProvider;
+namespace Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\DataProvider;
 
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Extension\QueryResultItemExtensionInterface;
@@ -20,7 +20,7 @@ use Doctrine\ORM\EntityManagerInterface;
 /**
  * Item data provider for the Doctrine ODM.
  * Class ItemDataProvider
- * @package Sol\ApiPlatform\MongoDB\Bridge\Doctrine\Odm\DataProvider
+ * @package Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\DataProvider
  */
 class ItemDataProvider implements ItemDataProviderInterface, RestrictedDataProviderInterface
 {
