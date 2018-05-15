@@ -1,12 +1,12 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Paginator;
+namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Paginator;
 
 use Doctrine\MongoDB\Query\Builder;
 
 /**
  * Class DoctrineMongoPaginator
- * @package Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Paginator
+ * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Paginator
  */
 class DoctrineMongoPaginator implements \Countable, \IteratorAggregate
 {

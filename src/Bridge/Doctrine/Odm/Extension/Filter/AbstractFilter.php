@@ -1,6 +1,6 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension\Filter;
+namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\Filter;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\AbstractContextAwareFilter;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
@@ -16,7 +16,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
 
 /**
  * Class AbstractFilter
- * @package Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension\Filter
+ * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\Filter
  */
 abstract class AbstractFilter implements FilterInterface
 {

@@ -1,6 +1,6 @@
 {
     "name": "sol/api-platform-mongo-bridge",
-    "type": "library",
+    "type": "symfony-bundle",
     "description": "Make apiplatform mongo compatible with the same functionalities.",
     "keywords": ["REST", "API", "API-PLATFORM", "MONGODB"],
     "homepage": "https://api-platform.com",
@@ -66,10 +66,10 @@
     "suggest": {
     },
     "autoload": {
-        "psr-4": { "Sol\\ApiPlatform\\MongoDB\\": "src/" }
+        "psr-4": { "Sol\\ApiPlatform\\MongoBridge\\": "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "Sol\\ApiPlatform\\MongoDB\\Tests\\": "tests/" }
+        "psr-4": { "Sol\\ApiPlatform\\MongoBridge\\Tests\\": "tests/" }
     },
     "extra": {
         "branch-alias": {
@@ -77,12 +77,12 @@
         }
     },
     "config": {
-	"preferred-install": {
-		"*": "dist"
-	},
-	"sort-packages": true,
-	"platform": {
-		"ext-mongo": "1.6.16"
-	}
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true,
+        "platform": {
+            "ext-mongo": "1.6.16"
+        }
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension;
+namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension;
 
 use ApiPlatform\Core\Api\FilterCollection;
 use ApiPlatform\Core\Api\FilterLocatorTrait;
-use Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension\Filter\FilterInterface;
+use Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\Filter\FilterInterface;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
 use ApiPlatform\Core\Exception\InvalidArgumentException;
 use ApiPlatform\Core\Metadata\Resource\Factory\ResourceMetadataFactoryInterface;
@@ -13,7 +13,7 @@ use Doctrine\ODM\MongoDB\Query\Builder;
 
 /**
  * Class FilterExtension
- * @package Sol\ApiPlatform\MongoDB\Birdge\Doctrine\Odm\Extension
+ * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension
  */
 final class FilterExtension implements ContextAwareQueryCollectionExtensionInterface
 {
