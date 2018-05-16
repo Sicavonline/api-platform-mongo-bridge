@@ -78,6 +78,7 @@ class ExistsFilter extends AbstractContextAwareFilter
         $propertyParts = $this->splitPropertyParts($property, $resourceClass);
         $metadata      = $this->getNestedMetadata($resourceClass, $propertyParts['associations']);
 
+        //var_dump($field); var_dump($method); die('aaa');
         if ($metadata->hasField($field)) {
             $queryBuilder->field($field)->{$method}(null);
         }

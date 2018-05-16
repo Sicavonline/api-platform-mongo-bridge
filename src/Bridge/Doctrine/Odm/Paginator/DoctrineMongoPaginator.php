@@ -6,7 +6,7 @@ use Doctrine\MongoDB\Query\Builder;
 
 /**
  * Class DoctrineMongoPaginator
- * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Paginator
+ * @package Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Paginator
  */
 class DoctrineMongoPaginator implements \Countable, \IteratorAggregate
 {

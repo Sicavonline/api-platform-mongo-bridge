@@ -241,8 +241,11 @@ class SearchFilter extends AbstractContextAwareFilter
         switch ($strategy) {
             case null:
             case self::STRATEGY_EXACT:
-                $queryBuilder
-                    ->field($field)->equals(new \MongoRegex($wrapCase("^" . $value . "$")));
+                if($caseSensitive == true) {// use direct equal instead of regex
+                    $queryBuilder->field($field)->equals($value);
+                } else {// insensitiv regex dont work on _id
+                    $queryBuilder->field($field)->equals(new \MongoRegex($wrapCase("^" . $value . "$")));
+                }
                 break;
             case self::STRATEGY_PARTIAL:
                 $queryBuilder

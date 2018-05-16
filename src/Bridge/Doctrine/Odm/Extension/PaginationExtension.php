@@ -3,9 +3,9 @@
 namespace Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Extension;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
-use Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Paginator\Decorator\PaginatorDecorator;
-use App\Doctrine\Odm\Paginator\Decorator\Decorator\PaginatorPartialDecorator;
-use Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Paginator\DoctrineMongoPaginator;
+use Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Paginator\Decorator\PaginatorDecorator;
+use Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Paginator\Decorator\Decorator\PaginatorPartialDecorator;
+use Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Paginator\DoctrineMongoPaginator;
 use Doctrine\ODM\MongoDB\Query\Builder;
 use ApiPlatform\Core\Exception\InvalidArgumentException;
 use ApiPlatform\Core\Metadata\Resource\Factory\ResourceMetadataFactoryInterface;

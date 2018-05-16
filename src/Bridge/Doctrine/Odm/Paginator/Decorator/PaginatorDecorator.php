@@ -1,10 +1,11 @@
 <?php
 
 namespace Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Paginator\Decorator;
+use Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Paginator\Decorator\PaginatorPartialDecorator;
 
 /**
  * Class PaginatorDecorator
- * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Paginator\Decorator
+ * @package Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Paginator\Decorator
  */
 class PaginatorDecorator extends PaginatorPartialDecorator
 {
