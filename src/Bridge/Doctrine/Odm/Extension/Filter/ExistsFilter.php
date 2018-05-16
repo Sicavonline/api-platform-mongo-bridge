@@ -1,6 +1,6 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\Filter;
+namespace Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Extension\Filter;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
 use ApiPlatform\Core\Exception\InvalidArgumentException;
@@ -78,6 +78,7 @@ class ExistsFilter extends AbstractContextAwareFilter
         $propertyParts = $this->splitPropertyParts($property, $resourceClass);
         $metadata      = $this->getNestedMetadata($resourceClass, $propertyParts['associations']);
 
+        //var_dump($field); var_dump($method); die('aaa');
         if ($metadata->hasField($field)) {
             $queryBuilder->field($field)->{$method}(null);
         }

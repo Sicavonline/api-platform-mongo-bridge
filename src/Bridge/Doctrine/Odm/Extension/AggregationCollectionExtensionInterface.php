@@ -3,13 +3,13 @@
 namespace Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Extension;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
-use Doctrine\ODM\MongoDB\Query\Builder;
+use Doctrine\ODM\MongoDB\Aggregation\Builder;
 
 /**
- * Interface QueryCollectionExtensionInterface
- * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension
+ * Cette interface definit un contrat de modification de requete doctrine par une extension
+ * Interface QueryCollectionExtensionInterface.
  */
-interface QueryCollectionExtensionInterface
+interface AggregationCollectionExtensionInterface
 {
     /**
      * @param Builder                     $queryBuilder

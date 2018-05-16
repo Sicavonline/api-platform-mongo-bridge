@@ -1,6 +1,6 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension;
+namespace Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Extension;
 
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
 use ApiPlatform\Core\Exception\InvalidArgumentException;
@@ -60,7 +60,7 @@ class OrderExtension implements ContextAwareQueryCollectionExtensionInterface
             }
         }
 
-        if (null !== $this->order) { // order par defaut injecté par api-plateform
+        if (null !== $this->order) { // order par defaut injectï¿½ par api-plateform
             foreach ($identifiers as $identifier) {
                 $queryBuilder->sort("$identifier", $this->order);
             }

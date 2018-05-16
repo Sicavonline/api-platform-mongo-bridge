@@ -1,22 +1,20 @@
 <?php
+namespace Sol\ApiPlatform\Symfony\Bundle;
 
-namespace Sol\ApiPlatform\MongoBridge;
-
-use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class SolApiPlatformMongoBridgeBundle extends Bundle
+/**
+ * Class MongoBridgeBundle
+ */
+final class MongoBridgeBundle extends Bundle
 {
-    public function __construct()
-    {
-        // die('ok');
-    }
-
     /**
      * {@inheritdoc}
      */
     public function build(ContainerBuilder $container)
     {
+        die('ok');
         parent::build($container);
     }
 }

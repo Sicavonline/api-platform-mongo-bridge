@@ -1,18 +1,19 @@
 <?php
 
-namespace Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\Filter;
+namespace Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Extension\Filter;
 
 use ApiPlatform\Core\Api\FilterInterface;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Util\QueryNameGeneratorInterface;
 use ApiPlatform\Core\Exception\InvalidArgumentException;
 use Doctrine\ODM\MongoDB\Query\Builder;
 use Doctrine\ODM\MongoDB\Types\Type;
+use Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Extension\Filter\AbstractContextAwareFilter;
 
 /**
  * Class BooleanFilter
  * @package Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\Filter
  */
-class BooleanFilter extends AbstractContextAwareFilter implements FilterInterface
+class BooleanFilter extends AbstractContextAwareFilter  implements FilterInterface
 {
     /**
      * @inheritdoc
@@ -47,7 +48,7 @@ class BooleanFilter extends AbstractContextAwareFilter implements FilterInterfac
         $field = $property;
         if ($this->isReferenceProprety($property, $resourceClass)) { // pas de filtre sur les refereneces
             throw new \Exception('Les references ne sont pas supportes en tant que filtre, implementer le $in si besoin');
-        } else { // si embed ou property c'est ok
+        } else {
             $queryBuilder->field($field)->equals($value);
         }
     }

@@ -56,7 +56,7 @@ class ItemDataProvider implements ItemDataProviderInterface, RestrictedDataProvi
     }
 
 
-    public function getItem(string $resourceClass, $id, string $operationName = null, array $context = []): ? Produit
+    public function getItem(string $resourceClass, $id, string $operationName = null, array $context = [])
     {
         $manager = $this->managerRegistry->getManagerForClass($resourceClass);
         $identifiers = ['id' => $id];

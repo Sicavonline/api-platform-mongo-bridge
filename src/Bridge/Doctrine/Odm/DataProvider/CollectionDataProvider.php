@@ -13,9 +13,9 @@ use ApiPlatform\Core\DataProvider\ContextAwareCollectionDataProviderInterface;
 use ApiPlatform\Core\DataProvider\RestrictedDataProviderInterface;
 use ApiPlatform\Core\Exception\RuntimeException;
 use Doctrine\Bundle\MongoDBBundle\ManagerRegistry;
-use Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\ContextAwareQueryCollectionExtensionInterface;
-use Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\QueryCollectionExtensionInterface;
-use Sol\ApiPlatform\MongoBridge\Birdge\Doctrine\Odm\Extension\QueryResultCollectionExtensionInterface;
+use Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Extension\ContextAwareQueryCollectionExtensionInterface;
+use Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Extension\QueryCollectionExtensionInterface;
+use Sol\ApiPlatform\MongoBridge\Bridge\Doctrine\Odm\Extension\QueryResultCollectionExtensionInterface;
 use Doctrine\Common\Persistence\ObjectRepository;
 use Doctrine\ODM\MongoDB\DocumentRepository;
 
@@ -44,7 +44,7 @@ class CollectionDataProvider implements ContextAwareCollectionDataProviderInterf
     public function __construct(ManagerRegistry $managerRegistry, array $collectionExtensions = [])
     {
         $this->managerRegistry = $managerRegistry;
-        $this->collectionExtensions = $collectionExtensions;
+        $this->collectionExtensions = $collectionExtensions['$collectionExtensions'];
     }
 
     public function supports(string $resourceClass, string $operationName = null, array $context = []): bool
