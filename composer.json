@@ -19,7 +19,7 @@
         "php": ">=7.0",
         "doctrine/inflector": "^1.0",
         "api-platform/api-pack": "^1.1",
-        "doctrine/mongodb-odm-bundle": "*"
+        "doctrine/mongodb-odm-bundle": "*",
         "alcaeus/mongo-php-adapter": "^1.1",
     },
     "require-dev": {
