@@ -89,10 +89,12 @@
     },
     "scripts": {
         "pre-update-cmd": [
+            "echo '----------------------------------------->UPD'",
             "@composer config platform.ext-mongo 1.6.16",
             "@composer config platform.ext-mongodb 1.2.0"
         ],
         "pre-install-cmd": [
+            "echo '----------------------------------------->INST'",
             "@composer config platform.ext-mongo 1.6.16",
             "@composer config platform.ext-mongodb 1.2.0"
         ]
