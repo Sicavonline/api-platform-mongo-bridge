@@ -91,6 +91,10 @@
         "pre-update-cmd": [
             "@composer config platform.ext-mongo 1.6.16",
             "@composer config platform.ext-mongodb 1.2.0"
+        ],
+        "pre-install-cmd": [
+            "@composer config platform.ext-mongo 1.6.16",
+            "@composer config platform.ext-mongodb 1.2.0"
         ]
     }
 }
