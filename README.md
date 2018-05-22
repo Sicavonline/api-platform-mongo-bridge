@@ -4,7 +4,14 @@ Add the mongodb functionnality to api platform with all the extension enable
 
 Install
 -------
-First you need to install MongoDB PHP Driver, Api platform, plus alcaeus/mongo-php-adapter: [github](https://github.com/alcaeus/mongo-php-adapter).
+First you need to install MongoDB PHP Driver, Api platform
+
+Fun this command to configure your environnement informations : 
+
+```
+composer config "platform.ext-mongo" "1.6.16" # dependance d'alcaeus
+composer config "platform.ext-mongodb" "1.2.0" # dependance d'alcaeus
+```
 
 After run the command : 
 
