@@ -6,7 +6,7 @@ Install
 -------
 First you need to install MongoDB PHP Driver, Api platform
 
-Fun this command to configure your environnement informations : 
+Run this command to configure your environnement informations : 
 
 ```
 composer config "platform.ext-mongo" "1.6.16" # dependance d'alcaeus
