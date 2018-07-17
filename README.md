@@ -9,8 +9,8 @@ First you need to install MongoDB PHP Driver, Api platform
 Run this command to configure your environnement informations : 
 
 ```
-composer config "platform.ext-mongo" "1.6.16" # dependance d'alcaeus
-composer config "platform.ext-mongodb" "1.2.0" # dependance d'alcaeus
+composer config "platform.ext-mongo" "1.6.16" # alcaeus dependancies
+composer config "platform.ext-mongodb" "1.2.0" # alcaeus dependancies
 ```
 
 After run the command : 
